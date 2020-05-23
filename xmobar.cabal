@@ -213,6 +213,7 @@ library
        build-depends: hinotify >= 0.3 && < 0.5
        other-modules: Xmobar.Plugins.Mail, Xmobar.Plugins.MBox
        cpp-options: -DINOTIFY
+       extra-libraries: inotify
 
     if flag(with_iwlib) || flag(with_nl80211) || flag(all_extensions)
        other-modules: Xmobar.Plugins.Monitors.Wireless
